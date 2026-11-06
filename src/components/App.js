@@ -1,8 +1,22 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
-import Navigation from "./Navigation";
+
+function Navigation() {
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+}
 
 function App() {
   return (
